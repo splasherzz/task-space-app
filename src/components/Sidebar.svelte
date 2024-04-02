@@ -19,7 +19,9 @@
 
 <aside class="sidebar">
     <button class="plus" on:click={() => (showModal = !showModal)}>
-        <div class="plusbutton" />
+        <div class="plusbutton">
+            <img width="24" height="24" src="/icons/PlusButton.png" />
+        </div>
     </button>
 
     <hr />
@@ -56,15 +58,18 @@
     }
 
     .plusbutton {
-        background-image: url('icons/PlusButton.png');
 
         background-repeat: no-repeat;
         background-position: center;
         background-size: 24px;
         margin: 10px;
-        padding: 10px;
 
         border: none;
+    }
+
+    .plusbutton > img {
+    padding: 0;
+    margin: 0;
     }
 
     hr {
